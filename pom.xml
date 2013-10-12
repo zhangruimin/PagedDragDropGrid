@@ -29,12 +29,12 @@
                 <version>${android.version}</version>
                 <scope>provided</scope>
             </dependency>
-
             <dependency>
-                <groupId>android.support</groupId>
-                <artifactId>compatibility-v4</artifactId>
-                <version>${android-support.version}</version>
+                <groupId>com.google.android</groupId>
+                <artifactId>support-v4</artifactId>
+                <version>r7</version>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
     <build>
@@ -43,7 +43,7 @@
             <plugin>
                 <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                 <artifactId>android-maven-plugin</artifactId>
-                <version>3.5.3</version>
+                <version>3.6.0</version>
                 <configuration>
                     <nativeLibrariesDirectory>ignored</nativeLibrariesDirectory>
                     <sdk>
